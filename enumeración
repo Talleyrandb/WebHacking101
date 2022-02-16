@@ -1,0 +1,45 @@
+El cliente debe entregar los objetivos a analizar es decir una URL, identificar si la pagina Web responde y la tecnologia con la cual esta construida es fundamental 
+
+desde el navegador ir al sitio web https://mipaginaweb.com 
+
+Herraienta 01 wappalyzer
+
+al navegador web firefox adicionar el plugin wappalyzer, el cual muestra informacion sobre las tecnologias empleadas para la construccion de la pagina web.
+
+Herramienta 02 watweb
+
+desde la terminal de Kali-linux escribir el siguiente comando 
+
+whatweb https://mipaginaweb.com 
+
+Herramienta 03 nmap para web
+
+nmap --script http-enum -p443 https://mipaginaweb.com 
+nmap --script http-methods -p443 https://mipaginaweb.com
+
+escaner para encontrar vulnerabilidades 
+
+paginas de wordpress
+
+Herramienta 04 wpscan 
+
+enumerar u= usuarios, ap =todos los plugins, vp = plugins vulnerables, vt temas vulnerables 
+wpscan -u https://mipaginaweb.com -e u
+wpscan -u https://mipaginaweb.com -e ap
+wpscan -u https://mipaginaweb.com -e vp
+wpscan -u https://mipaginaweb.com -e vt
+wpscan -u https://mipaginaweb.com -e ap --plugins-detection aggressive -o archivo.out
+
+actualizar
+
+wpscan --update
+
+paginas de drupal 
+
+Herramienta 05 drupal 
+
+este es un proyecto abandonado pero puede servir en este tipo de paginas 
+
+droopescan scan drupal -u https://mipaginaweb.com -t 32
+
+Herramienta 04 nikto 
