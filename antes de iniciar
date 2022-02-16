@@ -1,0 +1,14 @@
+la enumeración es la parte inicial de cualquier tipo de análisis manual 
+cuando se analizar una infraestructura o una aplicación web es recomendable primero identificar del objetivo 
+la dirección IP o URL
+los servicios que expone
+las versiones de los servicios 
+los protocolos que emplea 
+la versión del sistema operativo que vamos a analizar
+
+NOTA: para esta guia se emplea el segmento de red 10.90.10.0/24
+
+PRIMER PASO 
+
+Contar con autorización del cliente para realizar las pruebas de intrusión, es recomendable informar desde que direccion ip se realizara el analisis, sin embargo para algunas pruebas
+sera necesario habilitar VPN o una red tor para que la IP cambie de manera constante 
