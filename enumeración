@@ -28,6 +28,7 @@ wpscan -u https://mipaginaweb.com -e u
 wpscan -u https://mipaginaweb.com -e ap
 wpscan -u https://mipaginaweb.com -e vp
 wpscan -u https://mipaginaweb.com -e vt
+wpscan -u https://mipaginaweb.com --disable-tls-checks -archivo.out
 wpscan -u https://mipaginaweb.com -e ap --plugins-detection aggressive -o archivo.out
 
 actualizar
